@@ -16,15 +16,15 @@ module.exports.displayHomePage = (req, res, next) => {
 }
 
 module.exports.displayAboutPage = (req, res, next) => {
-    res.render('index', { title: 'About', displayName: req.user ? req.user.displayName : ''});
+    res.render('aboutme', { title: 'About', displayName: req.user ? req.user.displayName : ''});
 }
 
 module.exports.displayProductsPage = (req, res, next) => {
-    res.render('index', { title: 'Products', displayName: req.user ? req.user.displayName : ''});
+    res.render('project', { title: 'Products', displayName: req.user ? req.user.displayName : ''});
 }
 
 module.exports.displayServicesPage = (req, res, next) => {
-    res.render('index', { title: 'Services', displayName: req.user ? req.user.displayName : ''});
+    res.render('services', { title: 'Services', displayName: req.user ? req.user.displayName : ''});
 }
 
 module.exports.displayContactPage = (req, res, next) => {
